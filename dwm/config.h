@@ -26,9 +26,8 @@ static const char *colors[][3]      = {
 static const char *const autostart[] = {
 	"picom", NULL,
 	"doas", "cpupower", "frequency-set", "-gperformance", NULL,
-	"sxhkd", NULL,
 	"dunst", NULL,
-	"/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1", NULL,
+	"/usr/libexec/polkit-gnome-authentication-agent-1", NULL,
 	"gnome-keyring-daemon", "-d", NULL,
 	"feh", "--bg-scale", "/mnt/media/wall/garden.jpg", NULL,
 	"gammastep", "-l", "30.0588:31.2268", "-t", "4400K:3200K", NULL,
@@ -76,8 +75,8 @@ static const Layout layouts[] = {
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,			XK_Return,	spawn,		SHCMD("st") },
-	{ MODKEY,			XK_z,		spawn,		SHCMD("dmenu_run") },
+	{ MODKEY,			XK_Return, spawn,	   SHCMD("kitty") },
+	{ MODKEY,			XK_z,	   spawn,	   SHCMD("dmenu_run") },
 	{ MODKEY|Mod1Mask,           	XK_j,      pushdown,       {0} },
 	{ MODKEY|Mod1Mask,           	XK_k,      pushup,         {0} },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
