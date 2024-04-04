@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "CaskaydiaCoveNerdFont:size=11:antialias=true:autohint=true";
+static char *font = "JetBrainsMonoNerdFont:size=11:antialias=true:autohint=true";
 static int borderpx = 1;
 
 /*
